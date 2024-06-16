@@ -1,0 +1,53 @@
+@import url("https://fonts.googleapis.com/css2?family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&family=Playwrite+NL:wght@100..400&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap");
+
+:root {
+  --font-family-main: "Old Standard TT", serif;
+  --font-family-secundary: "Roboto Mono", monospace;
+  --font-family-tertiary: "Playwrite NL", cursive;
+
+  --backgroud-color-main: #d5d2c8;
+
+  --color-main: #2d2d2d;
+  --colo-hover: rgba(0, 74, 15, 1);
+  --white: #fff;
+
+  --navbar-bg-color: hsl(0, 0%, 15%);
+  --navbar-text-color: hsl(36, 21%, 32%);
+  --navbar-text-color-focus: white;
+  --navbar-bg-contrast: hsl(0, 0%, 25%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-family-main);
+  height: 200rem;
+  line-height: 1.5;
+  font-size: 1rem;
+  color: var(--color-main);
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: currentColor;
+  font-family: var(--font-family-secundary);
+  &:hover {
+    color: var(--colo-hover);
+  }
+}
+
+/* Container class to simulate Bootstrap's container */
+.container {
+  max-width: 1200px; /* Or any desired max-width */
+  padding: 0 3rem; /* Horizontal padding */
+  margin: 0 auto; /* Center align the container */
+}
