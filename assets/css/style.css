@@ -2,19 +2,21 @@
 
 :root {
   --font-family-main: "Old Standard TT", serif;
-  --font-family-secundary: "Roboto Mono", monospace;
+  --font-family-secondary: "Roboto Mono", monospace;
   --font-family-tertiary: "Playwrite NL", cursive;
 
-  --backgroud-color-main: #d5d2c8;
+  --background-color-main: #d5d2c8;
 
   --color-main: #2d2d2d;
-  --colo-hover: rgba(0, 74, 15, 1);
+  --color-hover: hsl(0, 0%, 25%);
   --white: #fff;
 
   --navbar-bg-color: hsl(0, 0%, 15%);
   --navbar-text-color: hsl(36, 21%, 32%);
   --navbar-text-color-focus: white;
   --navbar-bg-contrast: hsl(0, 0%, 25%);
+
+  --navbar-min-height: 5rem;
 }
 
 * {
@@ -30,6 +32,7 @@ body {
   line-height: 1.5;
   font-size: 1rem;
   color: var(--color-main);
+  background-color: #f6f2e7;
 }
 
 li {
@@ -38,16 +41,20 @@ li {
 
 a {
   text-decoration: none;
-  color: currentColor;
-  font-family: var(--font-family-secundary);
-  &:hover {
-    color: var(--colo-hover);
-  }
+  color: inherit;
+  font-family: var(--font-family-secondary);
+}
+
+a:hover {
+  color: var(--color-hover);
 }
 
 /* Container class to simulate Bootstrap's container */
 .container {
-  max-width: 1200px; /* Or any desired max-width */
-  padding: 0 3rem; /* Horizontal padding */
-  margin: 0 auto; /* Center align the container */
+  max-width: 1200px;
+  /* Or any desired max-width */
+  padding: 0 3rem;
+  /* Horizontal padding */
+  margin: 0 auto;
+  /* Center align the container */
 }

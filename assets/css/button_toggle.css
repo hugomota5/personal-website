@@ -1,0 +1,45 @@
+.navbar__toggle {
+    display: none;
+    position: relative;
+    width: 27px;
+    height: 22px;
+    cursor: pointer;
+    background-color: black;
+}
+
+.navbar__toggle-big,
+.navbar__toggle-small {
+    width: 100%;
+    height: 2.5px;
+    background-color: #fff;
+    opacity: 0.8;
+    transition: all 0.4s;
+    transition-delay: 0.2s;
+}
+
+.navbar__toggle .navbar__toggle-big {
+    position: absolute;
+    top: 5px;
+    right: 0;
+    left: 0;
+    transform-origin: center;
+}
+
+.navbar__toggle .navbar__toggle-small {
+    position: absolute;
+    top: 15px;
+    right: 0;
+    left: 0;
+    transform-origin: center right;
+
+}
+
+.navbar__toggle--open .navbar__toggle-big:first-child {
+    -webkit-transform: translateY(10px) rotate(45deg);
+    transform: translateY(5px) rotate(45deg);
+}
+
+.navbar__toggle--open .navbar__toggle-small:last-child {
+    -webkit-transform: translateY(-2px) rotate(-45deg);
+        transform: translateY(-15px) rotate(-45deg);
+    }

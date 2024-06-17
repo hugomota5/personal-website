@@ -1,9 +1,25 @@
-@media screen {
-  body {
-    background-color: black;
-  }
-  .navbar__toggler {
-    display: flex !important;
-    
-  }
+body {
+  background-color: black !important;
+}
+
+.navbar__menu {
+  background-color: aqua;
+  position: fixed;
+  top: 70px;
+  left: 0;
+  width: 100%;
+  padding: 20px 35px;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 10px;
+  transform: translateX(-100%);
+  
+}
+
+.navbar__menu-link {
+  font-size: 14px;
+}
+
+.navbar__toggle {
+  display: block !important;
 }
