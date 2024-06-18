@@ -33,12 +33,10 @@
 .navbar__menu {
   display: flex;
   transition: all 0.3s ease-in-out !important;
-  
 }
 
-.navbar__menu--open {
+.navbar__menu.navbar__menu--active {
   transform: translate(0) !important;
-  
 }
 
 .navbar__menu-link {
@@ -54,3 +52,4 @@
   color: var(--navbar-text-color-focus);
   background-color: var(--navbar-bg-contrast);
 }
+

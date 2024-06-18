@@ -1,9 +1,9 @@
 body {
-  background-color: black !important;
+  background-color: rgb(28, 62, 212) !important;
 }
 
 .navbar__menu {
-  background-color: aqua;
+  background-color: var(--background-color-main);
   position: fixed;
   top: 70px;
   left: 0;
@@ -13,13 +13,12 @@ body {
   align-items: center;
   row-gap: 10px;
   transform: translateX(-100%);
-  
 }
 
 .navbar__menu-link {
   font-size: 14px;
 }
 
-.navbar__toggle {
+.navbar__hamburger {
   display: block !important;
 }
