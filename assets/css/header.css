@@ -33,29 +33,53 @@
 /* NAV */
 .navbar__menu {
   display: flex;
-  transition: all 0.3s ease-in-out !important;
+  transition: all 1s ease-out !important;
+  column-gap: 4px;
 }
 
 .navbar__menu.navbar__menu--active {
-  /* transform: translate(0) !important;
-   */
   right: 10px;
+  pointer-events: all;
 }
 
 .navbar__menu-link {
-  display: block;
+  position: relative;
+  /* display: block; */
   padding: 0.5rem 1rem;
   font-weight: 600;
-  width: 100%;
-  border-radius: 5px;
+  /* width: 100%; */
   color: var(--navbar-color-link);
+  letter-spacing: 0.5px;
+}
+
+a.navbar__menu-link::after {
+  content: "";
+  position: absolute;
+  background-color: var(--navbar-color-link);
+  width: 0;
+  height: 2px;
+  left: 0;
+  bottom: -2px;
+  transition: 0.3s ease-in-out;
+}
+
+a.navbar__menu-link:hover::after{
+  width: 100%;
 }
 
 .navbar__menu-link-active{
-  border-buttom: solid 1px #000;
+  border-bottom: solid 2px #000;
+} 
+
+/* .navbar__menu-link:is(:focus, :hover){
+  text-shadow: 1px 1px 0px var(--navbar-color-link);
 }
 
-/* .navbar__menu-link:is(:focus, :hover) {
+.navbar__menu-link-active{
+  border-bottom: solid 1px var(--navbar-color-link);
+}
+
+.navbar__menu-link:is(:focus, :hover) {
   color: var(--navbar-text-color-focus);
   background-color: var(--navbar-bg-contrast);
 } */

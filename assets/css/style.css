@@ -1,25 +1,45 @@
+/* GOOGLE FONTS */
+
 @import url("https://fonts.googleapis.com/css2?family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&family=Playwrite+NL:wght@100..400&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap");
 
+/* VARIABLES CSS */
 :root {
+  /* Font */
   --font-family-main: "Old Standard TT", serif;
   --font-family-secondary: "Roboto Mono", monospace;
   --font-family-tertiary: "Playwrite NL", cursive;
+
+  /* colores */
+
+  --first-color: #c4bf80;
+  --first-color-alter: #607448;
+  --white-color: #fafaff;
+  --dark-color: #101010;
+  --light-color: #606060;
+  --gray-color: #f0f1f3;
 
   --backgroud-color-primary: #c4bf80;
   --color-primary: #000;
   --navbar-color-link: rgba(0, 0, 0, 0.733);
 
-  --background-color-main: #c4bf80;
-
-  --color-main: #f5ecec;
-  --white: #fff;
-
-  --navbar-bg-color: hsl(0, 0%, 15%);
-  --navbar-text-color: hsl(36, 21%, 32%);
-  --navbar-text-color-focus: white;
-  --navbar-bg-contrast: hsl(0, 0%, 25%);
-
+  /* tipografia */
+  --body-cont: "Playwrite NL", cursive;
+  --big-font-size: 3rem;
+  --h1-font-size: 1.5rem;
+  --h2-font-size: 1.25rem;
+  --normal-font-size: 0.9385rem;
+  --small-font-size: 0.75rem;
   --navbar-min-height: 5rem;
+}
+
+@media screen and(min-width:768px) {
+  :root {
+    --big-font-size: 6rem;
+    --h1-font-size: 2.25rem;
+    --h2-font-size: 1.5rem;
+    --normal-font-size: 1rem;
+    --small-font-size: 0.813rem;
+  }
 }
 
 * {
@@ -62,7 +82,7 @@ a:hover {
   /* Center align the container */
 }
 
-.dflex{
+.dflex {
   display: flex;
   justify-content: center;
   align-items: center;
