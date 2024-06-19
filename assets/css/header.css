@@ -1,7 +1,7 @@
 #header {
   position: fixed;
   min-height: var(--navbar-min-height);
-  background-color: var(--background-color-main);
+  background-color: var(--backgroud-color-primary);
   top: 0;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
   align-content: center;
@@ -23,6 +23,7 @@
 .navbar__logo-link {
   display: flex;
   align-items: center;
+  color: var(--navbar-color-link);
   font-family: var(--font-family-tertiary);
   font-size: 1.3rem;
   font-weight: bold;
@@ -36,20 +37,25 @@
 }
 
 .navbar__menu.navbar__menu--active {
-  transform: translate(0) !important;
+  /* transform: translate(0) !important;
+   */
+  right: 10px;
 }
 
 .navbar__menu-link {
-  justify-content: center;
   display: block;
   padding: 0.5rem 1rem;
   font-weight: 600;
   width: 100%;
   border-radius: 5px;
+  color: var(--navbar-color-link);
 }
 
-.navbar__menu-link:is(:focus, :hover) {
+.navbar__menu-link-active{
+  border-buttom: solid 1px #000;
+}
+
+/* .navbar__menu-link:is(:focus, :hover) {
   color: var(--navbar-text-color-focus);
   background-color: var(--navbar-bg-contrast);
-}
-
+} */

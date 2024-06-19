@@ -5,10 +5,13 @@
   --font-family-secondary: "Roboto Mono", monospace;
   --font-family-tertiary: "Playwrite NL", cursive;
 
-  --background-color-main: #1533dde8;
+  --backgroud-color-primary: #c4bf80;
+  --color-primary: #000;
+  --navbar-color-link: rgba(0, 0, 0, 0.733);
+
+  --background-color-main: #c4bf80;
 
   --color-main: #f5ecec;
-  --color-hover: hsl(0, 0%, 25%);
   --white: #fff;
 
   --navbar-bg-color: hsl(0, 0%, 15%);
@@ -31,7 +34,6 @@ body {
   height: 200rem;
   line-height: 1.5;
   font-size: 1rem;
-  color: var(--color-main);
   background-color: #f6f2e7;
 }
 
@@ -40,13 +42,14 @@ li {
 }
 
 a {
+  color: var(--navbar-color-link);
   text-decoration: none;
   color: inherit;
   font-family: var(--font-family-secondary);
 }
 
 a:hover {
-  color: var(--color-hover);
+  color: var(--color-primary);
 }
 
 /* Container class to simulate Bootstrap's container */
@@ -57,4 +60,10 @@ a:hover {
   /* Horizontal padding */
   margin: 0 auto;
   /* Center align the container */
+}
+
+.dflex{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

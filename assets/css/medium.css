@@ -5,14 +5,16 @@ body {
 .navbar__menu {
   background-color: var(--background-color-main);
   position: fixed;
-  top: 70px;
-  left: 0;
-  width: 100%;
+  top: 90px;
+  right: -100%;
+  width: 300px;
   padding: 20px 35px;
   flex-direction: column;
   align-items: center;
   row-gap: 10px;
-  transform: translateX(-100%);
+  z-index: 10;
+  box-shadow: -5px 0px 5px rgba(0, 0, 0, 0.25);
+  /* transform: translateX(-100%); */
 }
 
 .navbar__menu-link {
